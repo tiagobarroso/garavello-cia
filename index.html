@@ -671,7 +671,7 @@ http://www.tooplate.com/view/2086-multi-color
                 switch(pageNo){
                         
                         case 1:
-                            window.location.href = '?page=inicial';
+                            window.history.pushState(null, null, '?page=inicial');
                             break;
                         case 2:
                             window.location.href = '?page=servicos';
