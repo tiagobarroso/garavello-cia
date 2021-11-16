@@ -667,6 +667,22 @@ http://www.tooplate.com/view/2086-multi-color
                     $('.cd-hero-slider').removeClass('small-screen');
                     $('.cd-hero-slider li:nth-of-type(' + pageNo + ')').css("min-height", "100%");
                 }
+
+                switch(pageNo){
+                        
+                        case '1':
+                            window.location.href = '?page=inicial';
+                            break;
+                        case '2':
+                            window.location.href = '?page=servicos';
+                            break;
+                        case '3':
+                            window.location.href = '?page=time';
+                            break;
+                        case '4':
+                            window.location.href = '?page=endereco';
+                            break;
+                }
             }
 
             /*
@@ -722,6 +738,23 @@ http://www.tooplate.com/view/2086-multi-color
         
                 // Remove preloader (https://ihatetomatoes.net/create-custom-preloading-screen/)
                 $('body').addClass('loaded');
+
+                let searchParams = new URLSearchParams(window.location.search)
+
+                if(searchParams.has('page')){
+
+                    switch(searchParams.has('page')){
+                        
+                        case 'inicial':
+                            break;
+                        case 'servicos':
+                            break;
+                        case 'time':
+                            break;
+                        case 'endereco':
+                            break;
+                    }
+                }
                            
             });
 
