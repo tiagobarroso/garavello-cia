@@ -6,7 +6,7 @@ http://www.tooplate.com/view/2086-multi-color
 
 */
 body {
-	background-color: #DDDDDD;
+	background-color: #061385;
 	color: black;
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-size: 17px;
@@ -690,7 +690,7 @@ figure.effect-bubba:hover p {
 }
 
 @media only screen and (min-width: 600px) {
-	.tm-footer { padding: 50px 30px 20px; }
+	.tm-footer { padding: 150px 30px 20px; }
 	.tm-copyright-text { width: auto; }
 }
 
