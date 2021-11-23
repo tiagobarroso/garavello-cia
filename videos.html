@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Garavelo & CIA máquinas de costura</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.9/plyr.css" />
+  </head>
+  <body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container px-4 px-lg-5">
+        <a class="navbar-brand text-uppercase" href="/"
+          ><div class="logo-ico"></div>
+          Garavello & Cia</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/"
+                >Inicial</a
+              >
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#!">Serviços</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="/videos.html">Galeria</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#!">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Section-->
+    <section class="py-5">
+      <div class="container px-4 px-lg-5 mt-3">
+        <h2>Vídeos</h2>
+        <div
+          class="
+            row
+            gx-3 gx-lg-5
+            row-cols-1 row-cols-md-3 row-cols-xl-3
+            justify-content-center
+          "
+          style="cursor: pointer"
+        >
+          <div class="col mb-2" id="base">
+            <div class="card h-100">
+              <video
+                src=""
+                class="py-2 bg-dark"
+                style="
+                  position: relative;
+                  width: 80%;
+                  height: 500px;
+                  margin: auto;
+                "
+              ></video>
+              <!-- Product details-->
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <!-- Product name-->
+                  <h5 class="fw-bolder url">Nome Máquina</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">
+          Endereço: Av. da Saudade, 3792 - Vila Santa Cruz, São José do Rio
+          Preto - SP, 15014-020
+        </p>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="videoModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel">Modal title</h5>           
+          </div>
+          <div class="modal-body" style="display: flex;">
+            <video style="position: relative; max-width: 85%; margin: auto;min-width: 30%;">
+              <source src="" type="video/mp4" />
+            </video>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary col-12"
+              data-dismiss="modal"
+              onclick="$('#videoModal').modal('hide')"
+            >
+              Fechar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.plyr.io/3.6.9/plyr.polyfilled.js"></script>
+
+    <!-- Core theme JS-->
+    <script src="script_videos.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <a
+      href="https://wa.me/5517991162607?text=Estava%20dando%20uma%20olhada%20no%20site.%20Gostaria%20de%20mais%20informações."
+      style="
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        background-color: #25d366;
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 1px 1px 2px #888;
+        z-index: 1000;
+      "
+      target="_blank"
+    >
+      <i style="margin-top: 16px" class="fa fa-whatsapp"></i>
+    </a>
+  </body>
+</html>

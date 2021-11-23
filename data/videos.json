@@ -1,0 +1,38 @@
+[
+    {
+        "nome": "Nome Máquina",
+        "url":"http://192.168.15.8:8080/videos/video_1.mp4",
+        "miniImage": ""
+
+    },
+    {
+        "nome": "Nome Máquina",
+        "url":"http://192.168.15.8:8080/videos/video_2.mp4",
+        "miniImage": ""
+    },
+    {
+        "nome": "Nome Máquina",
+        "url":"http://192.168.15.8:8080/videos/video_3.mp4",
+        "miniImage": ""
+    },
+    {
+        "nome": "Nome Máquina",
+        "url":"http://192.168.15.8:8080/videos/video_4.mp4",
+        "miniImage": ""
+    },
+    {
+        "nome": "Nome Máquina",
+        "url":"http://192.168.15.8:8080/videos/video_5.mp4",
+        "miniImage": ""
+    },
+    {
+        "nome": "Nome Máquina",
+        "url":"http://192.168.15.8:8080/videos/video_6.mp4",
+        "miniImage": ""
+    },
+    {
+        "nome": "Nome Máquina",
+        "url":"http://192.168.15.8:8080/videos/video_7.mp4",
+        "miniImage": ""
+    }
+]
