@@ -50,4 +50,9 @@ window.onload = () => {
       instance.pause();
     });
   });
+
+  var myCarousel = document.querySelector('#carouselExampleSlidesOnly')
+  new bootstrap.Carousel(myCarousel, {
+    interval: 2000,
+  })
 };

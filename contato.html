@@ -34,9 +34,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.9/plyr.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.9.0/css/ol.css" type="text/css">
+
+    <style>
+      .map {
+        height: 400px;
+        width: 100%;
+      }
+    </style>
   </head>
-  <body>
+  <body class="justify-content-between">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container px-4 px-lg-5">
@@ -58,45 +65,38 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/"
+              <a class="nav-link" href="/"
                 >Inicial</a
               >
             </li>
-            <li class="nav-item"><a class="nav-link" href="#!">Serviços</a></li>
+            <li class="nav-item"><a class="nav-link" href="/servicos">Serviços</a></li>
             <li class="nav-item">
               <a class="nav-link" href="/videos.html">Galeria</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#!">Contato</a></li>
+            <li class="nav-item "><a class="nav-link active" href="#!">Contato</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
+    <div class="row justify-content-center py-5 bg-dark text-light">
+      <div class="col text-center">
+        <h2>Venha nos fazer uma visita!</h2>
+      </div>      
+    </div>
+
     <!-- Section-->
     <section class="py-5">
       <div class="container px-4 px-lg-5 mt-3">
-        <h2>Venha nos fazer uma visita!</h2>
-        <div class="row justify-content-center" style="cursor: pointer">
-          <div class="col mb-2" id="base">
-            <div class="card h-100">
-              <div class="card-header">Endereço</div>
-              <!-- Product details-->
-              <div class="card-body p-4">
-                <div class="text-center">
-                    <p class="m-0 text-center">
-                        Av. da Saudade, 3792 
-                    </p>
-                    <p class="m-0 text-center">
-                        Vila Santa Cruz, São José do Rio Preto - SP
-                    </p>
-                    <p class="m-0 text-center">
-                        15014-020
-                    </p>
-                </div>
-                <div id="map"></div>                
-              </div>
-            </div>
-          </div>
+        
+        <div
+          class="
+            row
+            gx-4 gx-lg-5
+            row-cols-1 row-cols-md-2
+            justify-content-center
+          "
+        >
           <div class="col mb-2" id="base">
             <div class="card h-100">
               <div class="card-header">Contatos</div>
@@ -104,9 +104,34 @@
               <div class="card-body p-4">
                 <div class="text-jutfied">
                   <!-- Product name-->
-                  <h3><i style="margin-top:16px" class="fa fa-whatsapp"></i> (17) 99116-2607 (Júlio)</h3>
-                  <h3><i style="margin-top:16px" class="fa fa-phone"></i> (17) 3353-0747</h3>
+                  <h3>
+                    <i style="margin-top: 16px" class="fa fa-whatsapp"></i> (17)
+                    99116-2607 (Júlio)
+                  </h3>
+                  <h3>
+                    <i style="margin-top: 16px" class="fa fa-phone"></i> (17)
+                    3353-0747
+                  </h3>
+                  <h3>
+                    <i style="margin-top: 16px" class="fa fa-envelope"></i> garavelloecia@hotmail.com
+                  </h3>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-2" id="base">
+            <div class="card h-100">
+              <div class="card-header">Endereço</div>
+              <!-- Product details-->
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <p class="m-0 text-center">Av. da Saudade, 3792</p>
+                  <p class="m-0 text-center">
+                    Vila Santa Cruz, São José do Rio Preto - SP
+                  </p>
+                  <p class="m-0 text-center">15014-020</p>
+                </div>
+                <iframe class="map"  frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-49.376351237297065%2C-20.81563002443156%2C-49.37281072139741%2C-20.813418712551808&amp;layer=mapnik&amp;marker=-20.814524372547215%2C-49.37458097934723" style="border: 1px solid black"></iframe>
               </div>
             </div>
           </div>
@@ -115,7 +140,7 @@
     </section>
 
     <!-- Footer-->
-    <footer class="py-5 bg-dark">
+    <footer class="py-5 bg-dark" style="bottom: 0">
       <div class="container">
         <p class="m-0 text-center text-white">
           Endereço: Av. da Saudade, 3792 - Vila Santa Cruz, São José do Rio
@@ -137,12 +162,6 @@
     ></script>
     <script src="https://cdn.plyr.io/3.6.9/plyr.polyfilled.js"></script>
 
-    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-    <script
-    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
-    async
-    ></script>
-
     <!-- Core theme JS-->
     <script src="script_contato.js"></script>
 
@@ -150,5 +169,30 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
     />
+
+    <a
+      href="https://wa.me/5517991162607?text=Estava%20dando%20uma%20olhada%20no%20site.%20Gostaria%20de%20mais%20informações."
+      style="
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        background-color: #25d366;
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 1px 1px 2px #888;
+        z-index: 1000;
+      "
+      target="_blank"
+    >
+      <i style="margin-top: 16px" class="fa fa-whatsapp"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.9.0/build/ol.js"></script>
+    <script src="/script_contato.js"></script>
+
   </body>
 </html>

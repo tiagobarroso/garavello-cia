@@ -1,37 +1,37 @@
 [
     {
-        "nome": "Nome Máquina",
+        "nome": "Nome Máquina 1",
         "url":"/videos/video_1.mp4",
         "miniImage": ""
 
     },
     {
-        "nome": "Nome Máquina",
+        "nome": "Nome Máquina2",
         "url":"/videos/video_2.mp4",
         "miniImage": ""
     },
     {
-        "nome": "Nome Máquina",
+        "nome": "Nome Máquina 3",
         "url":"/videos/video_3.mp4",
         "miniImage": ""
     },
     {
-        "nome": "Nome Máquina",
+        "nome": "Nome Máquina 4",
         "url":"/videos/video_4.mp4",
         "miniImage": ""
     },
     {
-        "nome": "Nome Máquina",
+        "nome": "Nome Máquina 5",
         "url":"/videos/video_5.mp4",
         "miniImage": ""
     },
     {
-        "nome": "Nome Máquina",
+        "nome": "Nome Máquina 6",
         "url":"/videos/video_6.mp4",
         "miniImage": ""
     },
     {
-        "nome": "Nome Máquina",
+        "nome": "Nome Máquina 7",
         "url":"/videos/video_7.mp4",
         "miniImage": ""
     }
