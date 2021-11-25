@@ -58,11 +58,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#!">Inicial</a>
+              <a class="nav-link active" aria-current="page" href="#!"
+                >Inicial</a
+              >
             </li>
-            <li class="nav-item"><a class="nav-link" href="/servicos">Serviços</a></li>
-            <li class="nav-item"><a class="nav-link" href="/videos.html">Galeria</a></li>
-            <li class="nav-item"><a class="nav-link" href="/contato">Contato</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="/servicos">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/videos.html">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contato">Contato</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -160,8 +168,7 @@
     </section>
 
     <section class="py-3">
-      <div class="container px-4 px-lg-5 mt-3 bg-dark" style="max-height: 50%;">
-        
+      <div class="container px-4 px-lg-5 mt-3 bg-dark" style="max-height: 50%">
         <div class="row justify-content-center py-3">
           <div class="row owl-carousel video-section">
             <div class="item">
@@ -170,7 +177,7 @@
                   class="js-player"
                   crossorigin
                   playsinline
-                  style="height: 450px; width: 500px;"
+                  style="height: 450px; width: 500px"
                 >
                   <source
                     src="videos/video_1.mp4"
@@ -186,7 +193,7 @@
                   class="js-player"
                   crossorigin
                   playsinline
-                  style="height: 450px; width: 500px;"
+                  style="height: 450px; width: 500px"
                 >
                   <source
                     src="videos/video_2.mp4"
@@ -202,7 +209,7 @@
                   class="js-player"
                   crossorigin
                   playsinline
-                  style="height: 450px; width: 500px;"
+                  style="height: 450px; width: 500px"
                 >
                   <source
                     src="videos/video_3.mp4"
@@ -218,7 +225,7 @@
                   class="js-player"
                   crossorigin
                   playsinline
-                  style="height: 450px; width: 500px;"
+                  style="height: 450px; width: 500px"
                 >
                   <source
                     src="videos/video_4.mp4"
@@ -237,8 +244,8 @@
     <footer class="py-5 bg-dark">
       <div class="container">
         <p class="m-0 text-center text-white">
-            Endereço: Av. da Saudade, 3792 - Vila Santa Cruz, São José do Rio
-            Preto - SP, 15014-020
+          Endereço: Av. da Saudade, 3792 - Vila Santa Cruz, São José do Rio
+          Preto - SP, 15014-020
         </p>
       </div>
     </footer>
@@ -259,12 +266,44 @@
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
 
-
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <a href="https://wa.me/5517991162607?text=Estava%20dando%20uma%20olhada%20no%20site.%20Gostaria%20de%20mais%20informações." style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
-      z-index:1000;" target="_blank">
-    <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <a
+      href="https://wa.me/5517991162607?text=Estava%20dando%20uma%20olhada%20no%20site.%20Gostaria%20de%20mais%20informações."
+      style="
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        background-color: #25d366;
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 1px 1px 2px #888;
+        z-index: 1000;
+      "
+      target="_blank"
+    >
+      <i style="margin-top: 16px" class="fa fa-whatsapp"></i>
     </a>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XM1RH25JZT"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-XM1RH25JZT");
+    </script>
   </body>
 </html>
